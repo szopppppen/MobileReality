@@ -1,0 +1,31 @@
+{
+  "name": "MobileReality",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "android": "adb reverse tcp:8081 tcp:8081 && react-native run-android",
+    "reload": "adb shell input keyevent 82"
+  },
+  "dependencies": {
+    "react": "16.6.3",
+    "react-native": "0.58.4",
+    "react-native-gesture-handler": "^1.0.15",
+    "react-native-keyboard-aware-scroll-view": "^0.8.0",
+    "react-navigation": "^3.2.1",
+    "resub": "^1.0.13"
+  },
+  "devDependencies": {
+    "@types/react": "^16.3.13",
+    "@types/react-native": "^0.57.35",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "24.1.0",
+    "jest": "24.1.0",
+    "metro-react-native-babel-preset": "0.51.1",
+    "react-test-renderer": "16.6.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
